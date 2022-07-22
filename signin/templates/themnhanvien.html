@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h1>NHAP THONG TIN NHAN VIEN</h1>
+    <form action="{%url 'xuly_themnhanvien'%}">
+
+
+        <table align="center">
+            <tr>
+                <td class="left">TEN NHAN VIEN</td>
+                <td><input type="text" id="ten" name="ten"></td>
+
+            </tr>
+            <tr>
+                <td class="left">CHUC VU</td>
+                <td><input type="text" id="chuc_vu" name="chuc_vu"></td>
+
+            </tr>
+            <tr>
+                <td class="left">NAM SINH</td>
+                <td><input type="text" id="nam_sinh" name="nam_sinh"></td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="signin" name="signin"></td>
+
+            </tr> 
+        </table>
+    </form>
+    <a href=" /signin">BACK</a>
+</body>
+
+</html>

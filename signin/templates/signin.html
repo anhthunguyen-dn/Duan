@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left {
+            text-align: left;
+        }
+    </style>
+    <link href="{% static 'css/style.css' %} " rel="stylesheet" type="text/css">
+</head>
+
+<body class = "hinhnen" style="text-align: center;">
+    <h1>SIGN IN - ĐĂNG NHẬP</h1>
+    <form action="{%url 'xuly_dangnhap'%}">
+
+
+        <table align="center">
+            <tr>
+                <td class="left">NAME</td>
+                <td><input type="text" id="name" name="name"></td>
+
+            </tr>
+            <tr>
+                <td class="left">PASSWORD</td>
+                <td><input type="text" id="password" name="password"></td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="signin" name="signin"></td>
+
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
